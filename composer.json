@@ -1,0 +1,30 @@
+{
+    "name": "nuvis/fiji-payroll",
+    "description": "Fiji-compliant Payroll plugin for Nuvis ERP X (FNPF + PAYE)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuvis Technologies",
+            "email": "support@nuvistechnologies.com.fj"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "illuminate/support": "^13.0",
+        "filament/filament": "^5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nuvis\\FijiPayroll\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Nuvis\\FijiPayroll\\FijiPayrollServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "stable"
+}
